@@ -1,0 +1,114 @@
+.cmp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-self: center;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+
+    --border-thickness: 1.5px;
+    --border-length: 8px;
+}
+
+a.cmp-btn {
+    padding: 3px 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 15px;
+        height: var(--border-thickness);
+        background-color: black;
+        transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+button.cmp-btn {
+    min-width: 120px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+
+    .border-top-left,
+    .border-top-right,
+    .border-bottom-left,
+    .border-bottom-right {
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            background: black;
+        }
+        &::before {
+            width: var(--border-thickness);
+            height: var(--border-length);
+        }
+        &::after {
+            width: var(--border-length);
+            height: var(--border-thickness);
+        }
+    }
+
+    .border-top-left {
+        &::before {
+            top: 0;
+            left: 0;
+            transition: height 0.3s ease;
+        }
+        &::after {
+            top: 0;
+            left: 0;
+        }
+    }
+    .border-top-right {
+        &::before {
+            top: 0;
+            right: 0;
+        }
+        &::after {
+            top: 0;
+            right: 0;
+            transition: width 0.3s ease;
+        }
+    }
+    .border-bottom-left {
+        &::before {
+            bottom: 0;
+            left: 0;
+        }
+        &::after {
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+    }
+    .border-bottom-right {
+        &::before {
+            bottom: 0;
+            right: 0;
+            transition: height 0.3s ease;
+        }
+        &::after {
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &:hover {
+        background-color: thistle;
+
+        .border-top-left::before, .border-bottom-right::before {
+            height: calc(100% - var(--border-length));
+        }
+        .border-bottom-left::after, .border-top-right::after {
+            width: calc(100% - var(--border-length));
+        }
+    }
+}

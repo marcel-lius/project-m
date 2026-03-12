@@ -1,0 +1,7 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="url(#brownGradient)" />
+  <text x="50" y="120" font-size="100" font-family="serif" font-weight="bold"
+        fill="black" dx="5" dy="5">M</text>
+  <text x="50" y="120" font-size="100" font-family="serif" font-weight="bold"
+        fill="red">M</text>
+</svg>
