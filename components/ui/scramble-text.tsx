@@ -58,7 +58,14 @@ const ScrambleText = ({
     }, { dependencies: [text, chars, duration, revealDelay, triggerOnScroll] });
 
     return (
-        <span ref={textRef} className={cn("inline-block whitespace-pre-wrap", className)} {...props}>
+        <span
+            ref={textRef}
+            className={cn(
+                "inline-block w-full max-w-full whitespace-pre-wrap break-words text-wrap overflow-hidden",
+                className
+            )}
+            {...props}
+        >
             {/* Initial empty state or fallback can be placed here, GSAP will overwrite it */}
         </span>
     );

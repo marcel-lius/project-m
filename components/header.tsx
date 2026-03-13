@@ -27,7 +27,7 @@ const Header = () => {
     }, { dependencies: [pathname] });
 
     return (
-        <header className='header h-20 bg-linear-[144.02deg,var(--color-background)_4.56%,var(--color-onyx-800)_72.98%] flex items-center fixed left-0 top-0 right-0 z-50 transition-all duration-400 ease-in-out px-8'>
+        <header className='header h-20 bg-linear-[144.02deg,var(--color-background)_50%,var(--color-onyx-800)_100%] md:bg-linear-[144.02deg,var(--color-background)_4.56%,var(--color-onyx-800)_72.98%] flex items-center fixed left-0 top-0 right-0 z-50 transition-all duration-400 ease-in-out px-4 md:px-8'>
             <div className="flex items-center">
                 <p className="font-mono text-3xl text-onyx-500 flex items-center">
                     Marcellius;
@@ -45,7 +45,7 @@ const Header = () => {
                 </p>
             </div>
 
-            <nav className="ml-auto flex items-center gap-4 md:gap-12">
+            <nav className="ml-auto hidden md:flex items-center gap-4 md:gap-12">
                 <Link href="/" className="text-broken-white">
                     Home
                 </Link>
