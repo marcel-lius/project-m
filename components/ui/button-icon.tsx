@@ -3,7 +3,6 @@
 import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from "gsap";
-import './styles.css';
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -57,14 +56,15 @@ const ButtonIcon: React.FC<ButtonProps> = ({
   });
 
   return (
-    <div ref={buttonWrapperRef} className={`cmp-btn-icon btn-wrapper w-[${size*2}px] h-[${size*2}px]`}>
-        <button
-            onClick={onClick}
-            className={`btn-icon w-[${size}px] h-[${size}px] ${className}`}
-            ref={buttonRef}
-        >
-            {children}
-        </button>
+    <div ref={buttonWrapperRef} style={{ width: size * 2, height: size * 2 }} className="flex items-center justify-center relative self-center cursor-pointer text-center border-none btn-wrapper">
+      <button
+        onClick={onClick}
+        style={{ width: size, height: size }}
+        className={`btn-icon ${className}`}
+        ref={buttonRef}
+      >
+        {children}
+      </button>
     </div>
   )
 };

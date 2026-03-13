@@ -1,0 +1,98 @@
+[
+  {
+    "backgroundImage": "/images/patina.png",
+    "title": "Patina Hotel",
+    "subtitle": ["AEM", "EDS"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://patinahotels.com/"
+  },
+  {
+    "backgroundImage": "/images/pphg.png",
+    "title": "Pan Pacific Hotel",
+    "subtitle": ["AEM"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://www.panpacific.com/"
+  },
+  {
+    "backgroundImage": "/images/ps.png",
+    "title": "PlayStation",
+    "subtitle": ["AEM"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://www.playstation.com/"
+  },
+  {
+    "backgroundImage": "/images/tma.png",
+    "title": "Tokio Marine",
+    "subtitle": ["AEM"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://tokiomarine.com/"
+  },
+  {
+    "backgroundImage": "/images/azay.png",
+    "title": "Allianz",
+    "subtitle": ["AEM"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://www.allianz.co.th/"
+  },
+  {
+    "backgroundImage": "/images/singhealth.png",
+    "title": "SingHealth",
+    "subtitle": ["AEM"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://www.singhealth.com.sg/"
+  },
+  {
+    "backgroundImage": "/images/apta.png",
+    "title": "Danone",
+    "subtitle": ["AEM"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://www.apta.com.hk/"
+  },
+  {
+    "backgroundImage": "/images/thomson.png",
+    "title": "Thomson Medical",
+    "subtitle": ["React", "Next.js", "Contentstack", "Tailwind"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://www.thomsonmedical.com/"
+  },
+  {
+    "backgroundImage": "/images/faculty.png",
+    "title": "Faculty Digital",
+    "subtitle": ["React", "Gatsby.js", "Contentful"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://facultydigital.com/"
+  },
+  {
+    "backgroundImage": "/images/aia.png",
+    "title": "AIA",
+    "subtitle": ["React", "Gatsby.js", "Redux"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series."
+  },
+  {
+    "backgroundImage": "/images/intercheck.png",
+    "title": "InterCheck",
+    "subtitle": ["React", "Redux"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://intercheck.com.au/"
+  },
+  {
+    "backgroundImage": "/images/newscrew.jpg",
+    "title": "News Crew",
+    "subtitle": ["React Native", "Redux"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://www.newscorpaustralia.com/"
+  },
+  {
+    "backgroundImage": "/images/streben.png",
+    "title": "StrebenGo",
+    "subtitle": ["React Native", "Redux"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "url": "https://www.strebentech.com/"
+  },
+  {
+    "backgroundImage": "/images/greatearth.png",
+    "title": "Greatearth",
+    "subtitle": ["React Native", "Redux"],
+    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series."
+  }
+]

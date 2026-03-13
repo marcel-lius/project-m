@@ -23,8 +23,8 @@
   --color-surface75: #bbbaa6;
   --color-surface50: #7c7c6f;
   --color-surface25: #42433d;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: var(--color-broken-white);
+  --foreground: var(--color-onyx-900);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -91,6 +91,22 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-broken-white: var(--color-broken-white);
+  --color-american-ruby: var(--color-american-ruby);
+  --color-gold-40: color-mix(in oklab, var(--color-yellow-300) 40%, transparent);
+  --color-gold-70: color-mix(in oklab, var(--color-yellow-300) 70%, transparent);
+  --color-onyx-50: oklch(0.96 0.00 146);
+  --color-onyx-100: oklch(0.89 0.01 146);
+  --color-onyx-200: oklch(0.82 0.01 145);
+  --color-onyx-300: oklch(0.75 0.01 145);
+  --color-onyx-400: oklch(0.68 0.02 145);
+  --color-onyx-500: oklch(0.60 0.02 145);
+  --color-onyx-600: oklch(0.52 0.02 145);
+  --color-onyx-700: oklch(0.44 0.01 145);
+  --color-onyx-800: oklch(0.34 0.01 145);
+  --color-onyx-900: oklch(0.26 0.01 145);
+  --color-onyx-950: oklch(0.16 0.00 145);
+
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -101,7 +117,7 @@
 }
 
 html {
-    overscroll-behavior: none;
+  overscroll-behavior: none;
 }
 
 body {
@@ -109,75 +125,17 @@ body {
   position: relative;
 
   &:has(.header) {
-    padding-top: 80px;
+    margin-top: 80px;
   }
+
   &:has(.footer) {
     padding-bottom: 100px;
   }
 }
 
-main {
-  min-height: 200vh;
-}
-
-.header {
-  height: 80px;
-  background: linear-gradient(
-    144.02deg,
-    var(--color-blue) 4.56%,
-    var(--color-pink) 72.98%
-  );
-  color: #0e100f;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  transition: ease 0.4s;
-  &--scrolled {
-    height: 40px;
-  }
-  z-index: 10;
-}
-
-.footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-blend-mode: color-dodge;
-    background-image: url("https://assets.codepen.io/16327/noise.png");
-  }
-
-  #footer-img {
-    height: 100px;
-    width: 100%;    
-    display: block;
-    overflow: visible;
-  }
-}
-
-h1.logo {
-  font-family: Luckiest Guy, Helvetica, sans-serif;
-  font-size: 110px;
-  padding-top: 5px;
-  text-shadow: 3px 7px black;
-  color: var(--color-american-ruby);
-}
-
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --background: var(--color-onyx-900);
+  --foreground: var(--color-broken-white);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
@@ -209,13 +167,55 @@ h1.logo {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.bg-grainy::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: color-dodge;
+  background-image: url('https://assets.codepen.io/16327/noise.png');
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-mono;
   }
