@@ -46,17 +46,17 @@ const Header = () => {
             </div>
 
             <nav className="ml-auto hidden md:flex items-center gap-4 md:gap-12">
-                <Link href="/" className="text-broken-white">
+                <Link href="#top" className="text-broken-white">
                     Home
                 </Link>
-                <Link href="/about" className="text-broken-white">
-                    About
+                <Link href="#expertise" className="text-broken-white">
+                    My Expertise
                 </Link>
-                <Link href="/portfolio" className="text-broken-white">
-                    Portfolio
+                <Link href="#what-i-did" className="text-broken-white">
+                    What I Did
                 </Link>
                 <Link className="text-broken-white" onClick={openDrawer}>
-                    Get in touch
+                    Let's Work Together
                 </Link>
             </nav>
         </header>

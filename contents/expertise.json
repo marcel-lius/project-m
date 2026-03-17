@@ -1,0 +1,22 @@
+[
+  {
+    "imagePath": "/images/aem.png",
+    "title": "AEM",
+    "description": "A practical talk on component APIs, accessibility, and shipping faster."
+  },
+  {
+    "imagePath": "/images/java.png",
+    "title": "Java",
+    "description": "Building type-safe applications with advanced Java patterns and best practices for enterprise systems."
+  },
+  {
+    "imagePath": "/images/react.png",
+    "title": "React",
+    "description": "Building dynamic user interfaces with React, leveraging component-based architecture and state management."
+  },
+  {
+    "imagePath": "/images/vue.png",
+    "title": "Vue.js",
+    "description": "Building reactive user interfaces with Vue.js, leveraging component-based architecture and state management."
+  }
+]

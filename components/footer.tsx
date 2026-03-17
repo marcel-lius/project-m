@@ -18,12 +18,12 @@ const Footer = () => {
 
     const techStackText = (
         <>
-            Built with <span className="text-broken-white font-bold">Next.js</span>,{" "}
-            <span className="text-broken-white font-bold">Tailwind CSS</span>, and{" "}
-            <span className="text-broken-white font-bold">GSAP</span>, deployed with{" "}
-            <span className="text-broken-white font-bold">Vercel</span>.<br />
-            Using <span className="text-broken-white font-bold">Github Copilot</span> and{" "}
-            <span className="text-broken-white font-bold">Cursor</span> assisstance.
+            Built with <span className="font-semibold">Next.js</span>,{" "}
+            <span className="font-semibold">Tailwind CSS</span>,{" "}
+            <span className="font-semibold">GSAP</span>, and deployed with{" "}
+            <span className="font-semibold">Vercel</span>.<br />
+            Using <span className="font-semibold">Github Copilot</span> and{" "}
+            <span className="font-semibold">Cursor</span> assisstance.
         </>
     );
 
@@ -37,14 +37,14 @@ const Footer = () => {
             >
                 <FaLinkedinIn size={20} />
             </a>
-            <a
+            {/* <a
                 href="https://github.com/marcel-lius"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-onyx-900 hover:opacity-70 transition-opacity"
             >
                 <FaGithub size={20} />
-            </a>
+            </a> */}
             <a
                 href="https://www.hackerrank.com/profile/marcellius_lim"
                 target="_blank"
@@ -59,7 +59,7 @@ const Footer = () => {
     const drawerTrigger = (
         <DrawerTrigger asChild>
             <Link className="text-broken-white">
-                Get in touch
+                Let's Work Together
             </Link>
         </DrawerTrigger>
     );
@@ -90,8 +90,8 @@ const Footer = () => {
             <svg preserveAspectRatio="none" id="footer-img" className="absolute inset-0 w-full h-full overflow-visible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2278 683">
                 <defs>
                     <linearGradient id="grad-1" x1="0" y1="0" x2="2278" y2="683" gradientUnits="userSpaceOnUse">
-                        <stop offset="0.2" stopColor="var(--color-onyx-700)"></stop>
-                        <stop offset="0.8" stopColor="var(--foreground)"></stop>
+                        <stop offset="0.6" stopColor="var(--color-onyx-700)"></stop>
+                        <stop offset="0.95" stopColor="var(--foreground)"></stop>
                     </linearGradient>
                 </defs>
                 <path className="footer-svg" id="bouncy-path" fill="url(#grad-1)" d="M0-0.3C0-0.3,464,156,1139,156S2278-0.3,2278-0.3V683H0V-0.3z" />
@@ -100,7 +100,7 @@ const Footer = () => {
                 <Drawer open={open} onOpenChange={setOpen}>
                     {/* Mobile layout: text on top, link + icons in a row below */}
                     <div className="flex flex-col gap-4 md:hidden">
-                        <p className="text-background text-sm font-semibold text-center mb-2">
+                        <p className="text-sm text-center mb-2">
                             {techStackText}
                         </p>
                         <div className="flex items-center justify-between gap-4">
@@ -114,7 +114,7 @@ const Footer = () => {
                         <div className="flex gap-6">
                             {drawerTrigger}
                         </div>
-                        <p className="text-background text-md font-semibold text-center">
+                        <p className="text-md text-center">
                             {techStackText}
                         </p>
                         {socialLinks}
