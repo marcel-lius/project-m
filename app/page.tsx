@@ -7,8 +7,16 @@ import CardImage from "@/components/ui/card-image";
 import ScrambleText from "@/components/ui/scramble-text";
 import SplitTextAnim from "@/components/ui/split-text";
 import CardCorner from "@/components/ui/card-corner";
+import { useEffect } from "react";
+import { toast } from "sonner";
 
 export default function Home() {
+  useEffect(() => {
+    setTimeout(() => {
+      toast.info("This website is currently under development. Thank you for your understanding.", { position: "top-center" });
+    }, 500);
+  }, []);
+
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex min-h-screen w-full flex-col items-center justify-start">

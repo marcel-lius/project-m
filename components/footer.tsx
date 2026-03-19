@@ -122,15 +122,15 @@ const Footer = () => {
 
                     <DrawerContent>
                         <DrawerHeader>
-                            <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-                            <DrawerDescription>This action cannot be undone.</DrawerDescription>
+                            <DrawerTitle className="text-2xl">Thank you for your interest!</DrawerTitle>
+                            <DrawerDescription className="text-xl">This feature will be available soon. For temporary, you can email me at <a href="mailto:marcellius@rocketmail.com" className="text-blue-500">marcellius@rocketmail.com</a>.</DrawerDescription>
                         </DrawerHeader>
-                        <DrawerFooter>
+                        {/* <DrawerFooter>
                             <Button>Submit</Button>
                             <DrawerClose asChild>
                                 <Button variant="outline">Cancel</Button>
                             </DrawerClose>
-                        </DrawerFooter>
+                        </DrawerFooter> */}
                     </DrawerContent>
                 </Drawer>
             </div>

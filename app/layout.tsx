@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ContactDrawerProvider } from "@/context/contact-drawer-context";
+import { Toaster } from "@/components/ui/sonner";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
         <ContactDrawerProvider>
           <Header />
           {children}
+          <Toaster />
           <Footer />
         </ContactDrawerProvider>
       </body>

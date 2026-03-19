@@ -3,96 +3,98 @@
     "backgroundImage": "/images/patina.png",
     "title": "Patina Hotel",
     "subtitle": ["AEM", "EDS"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Global hospitality brand with a focus on design and culture, offering unique experiences in iconic locations.",
     "url": "https://patinahotels.com/"
   },
   {
     "backgroundImage": "/images/pphg.png",
     "title": "Pan Pacific Hotel",
     "subtitle": ["AEM"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Luxury hotel brand offering exceptional service and elegant accommodations in prime locations.",
     "url": "https://www.panpacific.com/"
   },
   {
     "backgroundImage": "/images/ps.png",
     "title": "PlayStation",
     "subtitle": ["AEM"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Leading gaming brand known for its innovative consoles, exclusive games, and immersive entertainment experiences.",
     "url": "https://www.playstation.com/"
   },
   {
     "backgroundImage": "/images/tma.png",
     "title": "Tokio Marine",
     "subtitle": ["AEM"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Global insurance company providing a wide range of insurance products and services to individuals and businesses.",
     "url": "https://tokiomarine.com/"
   },
   {
     "backgroundImage": "/images/azay.png",
     "title": "Allianz",
     "subtitle": ["AEM"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Global insurance company providing a wide range of insurance products and services to individuals and businesses.",
     "url": "https://www.allianz.co.th/"
   },
   {
     "backgroundImage": "/images/singhealth.png",
     "title": "SingHealth",
     "subtitle": ["AEM"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Leading healthcare provider offering comprehensive medical services and innovative healthcare solutions.",
     "url": "https://www.singhealth.com.sg/"
   },
   {
     "backgroundImage": "/images/apta.png",
     "title": "Danone",
     "subtitle": ["AEM"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Global food and beverage company specializing in dairy products, plant-based alternatives, and specialized nutrition.",
     "url": "https://www.apta.com.hk/"
   },
   {
     "backgroundImage": "/images/thomson.png",
     "title": "Thomson Medical",
     "subtitle": ["React", "Next.js", "Contentstack", "Tailwind"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Leading healthcare provider offering comprehensive medical services and innovative healthcare solutions.",
     "url": "https://www.thomsonmedical.com/"
   },
   {
     "backgroundImage": "/images/faculty.png",
     "title": "Faculty Digital",
     "subtitle": ["React", "Gatsby.js", "Contentful"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Global digital agency specializing in creating innovative and engaging digital experiences for clients across various industries.",
     "url": "https://facultydigital.com/"
   },
   {
     "backgroundImage": "/images/aia.png",
     "title": "AIA",
     "subtitle": ["React", "Gatsby.js", "Redux"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series."
+    "description": "Leading insurance company providing a wide range of insurance products and services to individuals and businesses.",
+    "url": "https://www.aia.com.sg/"
   },
   {
     "backgroundImage": "/images/intercheck.png",
     "title": "InterCheck",
     "subtitle": ["React", "Redux"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Leading provider of innovative technology solutions for the financial industry.",
     "url": "https://intercheck.com.au/"
   },
   {
     "backgroundImage": "/images/newscrew.jpg",
     "title": "News Crew",
     "subtitle": ["React Native", "Redux"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Leading provider of innovative technology solutions for the media industry.",
     "url": "https://www.newscorpaustralia.com/"
   },
   {
     "backgroundImage": "/images/streben.png",
     "title": "StrebenGo",
     "subtitle": ["React Native", "Redux"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series.",
+    "description": "Leading provider of innovative technology solutions for time tracking and management.",
     "url": "https://www.strebentech.com/"
   },
   {
     "backgroundImage": "/images/greatearth.png",
     "title": "Greatearth",
     "subtitle": ["React Native", "Redux"],
-    "description": "Experience ultimate comfort and style with the latest edition of the iconic sneaker series."
+    "description": "Leading provider of innovative technology solutions for the environmental industry.",
+    "url": "https://www.greatearth.com/"
   }
 ]

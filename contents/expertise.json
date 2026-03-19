@@ -1,22 +1,22 @@
 [
   {
     "imagePath": "/images/aem.png",
-    "title": "AEM",
-    "description": "A practical talk on component APIs, accessibility, and shipping faster."
+    "title": "CMS",
+    "description": "Certified in AEM for the traditional CMS, and Contentful and Contentstack for headless CMS."
   },
   {
     "imagePath": "/images/java.png",
     "title": "Java",
-    "description": "Building type-safe applications with advanced Java patterns and best practices for enterprise systems."
+    "description": "Experienced in Java for backend development, utilizing frameworks like Spring Boot for building robust and scalable applications."
   },
   {
     "imagePath": "/images/react.png",
     "title": "React",
-    "description": "Building dynamic user interfaces with React, leveraging component-based architecture and state management."
+    "description": "Build highly scalable front-end using React with Next.js / Gatsby.js, Typescript, Tailwind CSS, and React Native for mobile applications."
   },
   {
     "imagePath": "/images/vue.png",
     "title": "Vue.js",
-    "description": "Building reactive user interfaces with Vue.js, leveraging component-based architecture and state management."
+    "description": "Building dynamic and responsive user interfaces with Vue.js, utilizing its ecosystem for state management and routing."
   }
 ]
