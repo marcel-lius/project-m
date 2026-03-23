@@ -5,6 +5,8 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ContactDrawerProvider } from "@/context/contact-drawer-context";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -34,6 +36,8 @@ export default function RootLayout({
         className={`${jetbrainsMono.variable} ${quicksand.variable} antialiased dark`}
       >
         <ContactDrawerProvider>
+          <Analytics />
+          <SpeedInsights />
           <Header />
           {children}
           <Toaster />
