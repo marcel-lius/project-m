@@ -9,6 +9,7 @@ import { FaLinkedinIn, FaGithub, FaHackerrank } from "react-icons/fa";
 import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "./ui/drawer";
 import { Button } from "./ui/button";
 import { useContactDrawer } from "../context/contact-drawer-context";
+import { ContactForm } from "./ui/contact-form";
 
 const down = 'M0-0.3C0-0.3,464,156,1139,156S2278-0.3,2278-0.3V683H0V-0.3z';
 const center = 'M0-0.3C0-0.3,464,0,1139,0s1139-0.3,1139-0.3V683H0V-0.3z';
@@ -122,15 +123,12 @@ const Footer = () => {
 
                     <DrawerContent>
                         <DrawerHeader>
-                            <DrawerTitle className="text-2xl">Thank you for your interest!</DrawerTitle>
-                            <DrawerDescription className="text-xl">This feature will be available soon. For temporary, you can email me at <a href="mailto:marcellius@rocketmail.com" className="text-blue-500">marcellius@rocketmail.com</a>.</DrawerDescription>
+                            <DrawerTitle className="text-2xl">Let's Work Together</DrawerTitle>
+                            <DrawerDescription className="text-lg">Drop your email, and I'll send you a copy of my resume.</DrawerDescription>
                         </DrawerHeader>
-                        {/* <DrawerFooter>
-                            <Button>Submit</Button>
-                            <DrawerClose asChild>
-                                <Button variant="outline">Cancel</Button>
-                            </DrawerClose>
-                        </DrawerFooter> */}
+                        <div className="p-4">
+                            <ContactForm onSuccess={() => setOpen(false)} onClose={() => setOpen(false)} />
+                        </div>
                     </DrawerContent>
                 </Drawer>
             </div>

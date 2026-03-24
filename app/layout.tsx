@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Quicksand, JetBrains_Mono, Inter } from "next/font/google";
+import { Quicksand, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -21,8 +21,8 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "Project-M",
-  description: "Project-M by Marcellius",
+  title: "Marcellius - Senior Fullstack AEM and Web Specialist",
+  description: "Marcellius is a Senior Fullstack AEM and Web Specialist with expertise in building scalable digital experiences using AEM, Java, React, Next.js, Vue.js,Tailwind CSS, and GSAP. Explore his portfolio and get in touch to collaborate on your next project.",
 };
 
 export default function RootLayout({
@@ -32,17 +32,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body
         className={`${jetbrainsMono.variable} ${quicksand.variable} antialiased dark`}
       >
         <ContactDrawerProvider>
-          <Analytics />
-          <SpeedInsights />
           <Header />
           {children}
           <Toaster />
           <Footer />
         </ContactDrawerProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -20,7 +20,7 @@ const ButtonCorner = ({
 
   return (
     <button
-      className={cn(className, "group flex items-center justify-center relative self-center bg-transparent cursor-pointer text-center border-none min-w-30 px-2.5 py-1.25 transition-colors duration-300 hover:bg-yellow-300/40")}
+      className={cn(className, "group flex items-center justify-center relative self-center bg-transparent cursor-pointer text-center border-none min-w-30 px-2.5 py-1.25 transition-colors duration-300 hover:bg-gold-40")}
       {...props}
     >
       {decoration}
